@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprenda a criar posts, reels e stories de dar orgulho com IA gratuita, direto do celular. C.I.A — Conteúdo Infinito com IA.">
+  <meta property="og:title" content="C.I.A — Conteúdo Infinito com IA">
+  <meta property="og:description" content="Curso passo a passo pra donos de negócio criarem conteúdo profissional com IA. Sem saber design. Direto do celular.">
+  <meta property="og:image" content="assets/hero-wide.jpg">
+  <meta name="theme-color" content="#05070F">
+  <title>C.I.A — Conteúdo Infinito com IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero-wide.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- GLOBAL LAYERS -->
+<div class="grain"    aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- ═══ CURTAIN LOADER ══════════════════════════════════════════════════════ -->
+<div id="curtain" aria-hidden="true">
+  <div class="curtain__panel curtain__panel--top"></div>
+  <div class="curtain__panel curtain__panel--bottom"></div>
+  <div class="curtain__center">
+    <div class="curtain__letters">
+      <span class="cl">C</span>
+      <span class="cl cl--dot">.</span>
+      <span class="cl">I</span>
+      <span class="cl cl--dot">.</span>
+      <span class="cl">A</span>
+      <span class="cl cl--dot cl--final">.</span>
+    </div>
+    <div class="curtain__progress-wrap">
+      <div class="curtain__bar"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ NAV ═════════════════════════════════════════════════════════════════ -->
+<nav class="nav" id="main-nav" role="navigation" aria-label="Navegação principal">
+  <a href="#" class="nav__wordmark" aria-label="C.I.A — topo da página">
+    C<span class="dot">.</span>I<span class="dot">.</span>A
+  </a>
+  <div class="nav__cta-group">
+    <a href="https://pay.kiwify.com.br/lRRpH6F"
+       class="btn btn--gold nav__cta mag-btn"
+       target="_blank" rel="noopener noreferrer">GARANTIR ACESSO</a>
+    <a href="https://wa.me/5511990101393?text=Oi!%20Vi%20o%20an%C3%BAncio%20e%20quero%20saber%20mais"
+       target="_blank" rel="noopener"
+       class="nav__wa-btn">
+      <img src="uploads/1280px-WhatsApp.svg.png" width="16" height="16" alt="" style="filter:brightness(0) invert(1);vertical-align:-2px;margin-right:5px;">Tirar dúvidas
+    </a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ════════════════════════════════════════════════════════════════ -->
+<section class="hero" id="hero" data-screen-label="Hero">
+  <div class="hero__bg-wrap" id="hero-bg-wrap">
+    <img class="hero__bg" id="hero-bg"
+         src="assets/hero-wide.jpg" alt=""
+         width="1920" height="1080"
+         fetchpriority="high" decoding="sync">
+
+  </div>
+  <div class="hero__scrim"></div>
+  <canvas id="hero-particles" aria-hidden="true"></canvas>
+
+  <div class="hero__content">
+    <p class="kicker">— CONTEÚDO INFINITO COM IA</p>
+    <h1 class="hero__h1">
+      <span class="h1-line"><span class="h1-word">Seu negócio é</span></span>
+      <span class="h1-line"><span class="h1-word cyan">profissional.</span></span>
+      <span class="h1-line"><span class="h1-word">Seu Instagram também</span></span>
+      <span class="h1-line"><span class="h1-word gold">deveria ser.</span></span>
+    </h1>
+    <p class="hero__sub">Aprenda a criar posts, reels e stories de dar orgulho — com IA gratuita, direto do celular, em minutos. Mesmo que você ache que "não tem jeito pra tecnologia".</p>
+    <div class="hero__cta">
+      <a href="https://pay.kiwify.com.br/lRRpH6F"
+         class="btn btn--gold btn--lg mag-btn"
+         target="_blank" rel="noopener noreferrer">QUERO POSTAR COM ORGULHO →</a>
+      <a href="https://wa.me/5511990101393?text=Oi!%20Vi%20o%20an%C3%BAncio%20e%20quero%20saber%20mais" target="_blank" rel="noopener" class="whatsapp-link"><img src="uploads/960px-WhatsApp.svg.webp" width="18" height="18" alt="" style="vertical-align:-3px;margin-right:5px;">Prefere tirar dúvidas? Fala no WhatsApp</a>
+    </div>
+    <div class="hero__trust" aria-label="Garantias">
+      <span>✓ Sem mensalidade</span>
+      <span>✓ Acesso imediato</span>
+      <span>✓ Garantia de 7 dias</span>
+    </div>
+  </div>
+  <div class="hero__scroll-hint" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ═══ MARQUEE I ════════════════════════════════════════════════════════════ -->
+<div class="marquee-wrap" data-speed="0.48" aria-hidden="true">
+  <div class="marquee-inner" id="marquee-1">
+    <span class="marquee-item">CONTEÚDO INFINITO</span>
+    <span class="marquee-item marquee-item--sep">∞</span>
+    <span class="marquee-item marquee-item--ghost">CONTEÚDO</span>
+    <span class="marquee-item marquee-item--cyan">INFINITO</span>
+    <span class="marquee-item marquee-item--sep">∞</span>
+    <span class="marquee-item marquee-item--ghost">CONTEÚDO INFINITO</span>
+    <span class="marquee-item marquee-item--sep">∞</span>
+    <span class="marquee-item">CONTEÚDO</span>
+    <span class="marquee-item marquee-item--cyan">INFINITO</span>
+    <span class="marquee-item marquee-item--sep">∞</span>
+  </div>
+</div>
+
+<!-- ═══ DOR ══════════════════════════════════════════════════════════════════ -->
+<section class="section dor" id="dor" data-screen-label="A Dor">
+  <div class="dor__grid">
+    <div class="dor__left">
+      <p class="kicker">— DEIXA EU ADIVINHAR...</p>
+      <h2 class="dor__h2">Você posta, olha o resultado,<br>e pensa:<br><span class="cyan">"ficou amador."</span></h2>
+      <p class="dor__intro">Você abre o Instagram pra postar algo do seu negócio. Olha pro resultado. E pensa: "ficou amador." Aí bate aquela vontade de não postar. De novo.</p>
+      <p class="dor__close" data-reveal><strong class="gold">Não é falta de capacidade sua.</strong> Ninguém nunca te ensinou do jeito certo, e de um jeito simples, pra quem tem negócio pra tocar e não tem tempo de virar designer.</p>
+    </div>
+    <div class="dor__right">
+      <p class="dor__label">Se você se reconhece em alguma dessas, esse curso é pra você:</p>
+      <ul class="dor__items" role="list">
+        <li class="dor__item">
+          <svg class="dor__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+          <span class="dor__item-text">Você tem vergonha de comparar seu perfil com o do concorrente.</span>
+        </li>
+        <li class="dor__item">
+          <svg class="dor__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+          <span class="dor__item-text">Seu negócio é bom de verdade, mas o Instagram não mostra isso.</span>
+        </li>
+        <li class="dor__item">
+          <svg class="dor__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+          <span class="dor__item-text">Você até tenta postar, mas fica torto, sem graça, capenga.</span>
+        </li>
+        <li class="dor__item">
+          <svg class="dor__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+          <span class="dor__item-text">Já pensou "não tenho jeito pra essas coisas de tecnologia".</span>
+        </li>
+        <li class="dor__item">
+          <svg class="dor__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+          <span class="dor__item-text">Seu perfil está parado há semanas porque você não sabe o que postar.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ANTES / DEPOIS ═══════════════════════════════════════════════════════ -->
+<section class="section compare" id="compare" data-screen-label="Antes-Depois">
+  <p class="kicker" data-reveal>— PRIMEIRO GANCHO DE PROVA</p>
+  <h2 class="compare__h2" data-reveal>A diferença que você vai ver<br>no <span class="cyan">SEU</span> perfil:</h2>
+  <div class="comparison-static" data-reveal-up>
+    <img src="assets/mockup-feed.png" loading="lazy"
+         alt="Perfil amador desorganizado à esquerda e perfil profissional estratégico à direita"
+         width="1536" height="1024">
+  </div>
+  <p class="comparison-caption" data-reveal-up>À esquerda: o que a maioria dos perfis parece. À direita: o que o C.I.A faz pelo seu.</p>
+  <div class="compare__cta" data-reveal>
+    <a href="https://pay.kiwify.com.br/lRRpH6F"
+       class="btn btn--outline mag-btn"
+       target="_blank" rel="noopener noreferrer">QUERO ESSA DIFERENÇA NO MEU PERFIL</a>
+  </div>
+</section>
+
+<!-- ═══ CONCEITO / FRAME SCRUB ═══════════════════════════════════════════════ -->
+<section class="scrub-section" id="conceito" data-screen-label="O Método">
+  <div class="scrub-sticky">
+    <canvas id="scrub-canvas" aria-label="Animação do método C.I.A"></canvas>
+    <div class="scrub-content">
+      <p class="kicker scrub-eyebrow">— O MÉTODO</p>
+      <h2 class="scrub-h2">E se criar um post profissional fosse tão<br>fácil quanto <span class="gold">mandar um áudio?</span></h2>
+    </div>
+    <div class="scrub-labels" id="scrub-labels">
+      <div class="scrub-label scrub-label--left">
+        <div class="scrub-label__num">1</div>
+        <div class="scrub-label__title">UMA IDEIA</div>
+        <div class="scrub-label__desc">Você fala o assunto. Só isso.</div>
+      </div>
+      <div class="scrub-label scrub-label--right">
+        <div class="scrub-label__num">3min</div>
+        <div class="scrub-label__title">CONTEÚDO PRONTO</div>
+        <div class="scrub-label__desc">Carrossel + reel + stories com a cara do seu negócio.</div>
+      </div>
+    </div>
+    <div class="scrub-close" id="scrub-close">
+      <p>É exatamente isso que o <span class="cyan">C.I.A</span> faz por você.</p>
+      <small>Conteúdo Infinito com IA — o infinito é literal.</small>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ETAPAS (3 PASSOS + MOCKUP CHAT) ══════════════════════════════════════ -->
+<section class="section etapas" id="etapas" data-screen-label="As 3 Etapas">
+  <div class="etapas__grid">
+    <div class="etapas__text">
+      <p class="kicker" data-reveal>— SÃO SÓ 3 ETAPAS</p>
+      <h2 class="etapas__h2" data-reveal>Do assunto ao post<br><span class="cyan">pronto pra publicar.</span></h2>
+      <ol class="etapas__list" role="list">
+        <li class="etapa-item" data-reveal data-delay="0">
+          <span class="etapa-item__num">1</span>
+          <div>
+            <div class="etapa-item__title">Você diz o assunto</div>
+            <p class="etapa-item__desc">Escreve ou fala o tema. Tipo: "promoção de fim de semana no meu restaurante".</p>
+          </div>
+        </li>
+        <li class="etapa-item" data-reveal data-delay="0.08">
+          <span class="etapa-item__num">2</span>
+          <div>
+            <div class="etapa-item__title">A IA monta o conteúdo</div>
+            <p class="etapa-item__desc">Carrossel profissional, com a cara do seu negócio, em segundos.</p>
+          </div>
+        </li>
+        <li class="etapa-item" data-reveal data-delay="0.16">
+          <span class="etapa-item__num">3</span>
+          <div>
+            <div class="etapa-item__title">Você posta com orgulho</div>
+            <p class="etapa-item__desc">Baixa, publica e vê a diferença no seu perfil. Sem design, sem custo.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <div class="etapas__mockup float-tilt" data-float>
+      <img src="assets/mockup-chat.png" loading="lazy"
+           alt="ChatGPT gerando um carrossel profissional de restaurante a partir de um pedido simples"
+           width="1024" height="1536">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ═══ O QUE VOCÊ VAI DOMINAR ════════════════════════════════════════════════ -->
+<section class="section dominar" id="dominar" data-screen-label="Conteúdo do Curso">
+  <p class="kicker" data-reveal>— O QUE VOCÊ VAI APRENDER</p>
+  <h2 class="dominar__h2" data-reveal>Em poucos minutos de curso, você já cria<br>seu primeiro post. <span class="gold">De verdade.</span></h2>
+  <p class="dominar__sub" data-reveal>Nada de teoria chata por horas. Você põe a mão na massa desde a primeira aula.</p>
+  <div class="dominar__grid">
+    <div class="dominar-card" data-reveal data-delay="0">
+      <div class="dominar-card__num">01</div>
+      <div class="dominar-card__title">Seu primeiro conteúdo em 10 minutos</div>
+      <p class="dominar-card__desc">Você cria algo pronto já na primeira aula — e sente o orgulho na hora.</p>
+    </div>
+    <div class="dominar-card" data-reveal data-delay="0.06">
+      <div class="dominar-card__num">02</div>
+      <div class="dominar-card__title">Imagens profissionais do zero</div>
+      <p class="dominar-card__desc">Mesmo sem saber nada de design.</p>
+    </div>
+    <div class="dominar-card" data-reveal data-delay="0.12">
+      <div class="dominar-card__num">03</div>
+      <div class="dominar-card__title">Carrosséis, stories e posts de feed</div>
+      <p class="dominar-card__desc">Os 3 formatos que seu negócio precisa, prontos.</p>
+    </div>
+    <div class="dominar-card" data-reveal data-delay="0.04">
+      <div class="dominar-card__num">04</div>
+      <div class="dominar-card__title">Conteúdo personalizado pro SEU nicho</div>
+      <p class="dominar-card__desc">Não genérico: a cara do seu negócio.</p>
+    </div>
+    <div class="dominar-card" data-reveal data-delay="0.1">
+      <div class="dominar-card__num">05</div>
+      <div class="dominar-card__title">Transformar notícia em post</div>
+      <p class="dominar-card__desc">Nunca mais ficar sem ideia do que postar.</p>
+    </div>
+    <div class="dominar-card" data-reveal data-delay="0.16">
+      <div class="dominar-card__num">06</div>
+      <div class="dominar-card__title">Onde e quando postar</div>
+      <p class="dominar-card__desc">Pra seu perfil nunca mais ficar parado.</p>
+    </div>
+  </div>
+  <div class="dominar__mockup float-tilt" data-float>
+    <img src="assets/mockup-membros.png" loading="lazy"
+         alt="Painel do C.I.A com os 17 agentes especializados por nicho"
+         width="1536" height="1024">
+  </div>
+</section>
+
+<!-- ═══ 17 NICHOS — HORIZONTAL PIN ════════════════════════════════════════════ -->
+<section class="nichos-section" id="nichos" data-screen-label="Nichos">
+  <div class="nichos-sticky">
+    <div class="nichos-ambient nichos-ambient--cyan  active"></div>
+    <div class="nichos-ambient nichos-ambient--gold"></div>
+    <div class="nichos-ambient nichos-ambient--purple"></div>
+    <div class="nichos-ambient nichos-ambient--cyan2"></div>
+
+    <div class="nichos-track" id="nichos-track">
+
+      <!-- PAINEL 1 -->
+      <div class="nicho-panel nicho-panel--cyan">
+        <div class="nicho-panel__ghost" aria-hidden="true">SAÚDE</div>
+        <div class="nicho-panel__num" aria-hidden="true">01</div>
+        <div class="nicho-panel__content">
+          <h3 class="nicho-panel__title">Saúde &amp;<br>Bem-Estar</h3>
+          <div class="nicho-pills" role="list">
+            <span class="nicho-pill" role="listitem">Médicos</span>
+            <span class="nicho-pill" role="listitem">Dentistas</span>
+            <span class="nicho-pill" role="listitem">Psicólogos</span>
+            <span class="nicho-pill" role="listitem">Nutricionistas</span>
+            <span class="nicho-pill" role="listitem">Fitness</span>
+            <span class="nicho-pill" role="listitem">Estética</span>
+            <span class="nicho-pill" role="listitem">Medicina Integrativa</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAINEL 2 -->
+      <div class="nicho-panel nicho-panel--gold">
+        <div class="nicho-panel__ghost" aria-hidden="true">SERVIÇOS</div>
+        <div class="nicho-panel__num" aria-hidden="true">02</div>
+        <div class="nicho-panel__content">
+          <h3 class="nicho-panel__title">Serviços &amp;<br>Negócios</h3>
+          <div class="nicho-pills" role="list">
+            <span class="nicho-pill" role="listitem">Advogados</span>
+            <span class="nicho-pill" role="listitem">Contadores</span>
+            <span class="nicho-pill" role="listitem">Corretores</span>
+            <span class="nicho-pill" role="listitem">Gestores de Tráfego</span>
+            <span class="nicho-pill" role="listitem">Idiomas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAINEL 3 -->
+      <div class="nicho-panel nicho-panel--purple">
+        <div class="nicho-panel__ghost" aria-hidden="true">LOCAL</div>
+        <div class="nicho-panel__num" aria-hidden="true">03</div>
+        <div class="nicho-panel__content">
+          <h3 class="nicho-panel__title">Local &amp;<br>Lifestyle</h3>
+          <div class="nicho-pills" role="list">
+            <span class="nicho-pill" role="listitem">Restaurantes</span>
+            <span class="nicho-pill" role="listitem">Barbearias</span>
+            <span class="nicho-pill" role="listitem">Arquitetura</span>
+            <span class="nicho-pill" role="listitem">Reformas</span>
+            <span class="nicho-pill" role="listitem">Igreja</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAINEL 4 — CTA -->
+      <div class="nicho-panel nicho-panel--cta">
+        <div class="nicho-panel__ghost" aria-hidden="true">E MAIS</div>
+        <div class="nicho-panel__content nicho-panel__content--full">
+          <h3 class="nicho-panel__title">E vem mais<br>por aí</h3>
+          <p class="nicho-panel__desc">O C.I.A cresce todo mês. Seu nicho não tá aqui? Ele chega.</p>
+          <a href="https://pay.kiwify.com.br/lRRpH6F"
+             class="btn btn--outline mag-btn"
+             target="_blank" rel="noopener noreferrer">GARANTIR MEU ACESSO</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nichos-progress" aria-hidden="true">
+      <div class="np-seg active"></div>
+      <div class="np-seg"></div>
+      <div class="np-seg"></div>
+      <div class="np-seg"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MARQUEE II ════════════════════════════════════════════════════════════ -->
+<div class="marquee-wrap" data-speed="0.45" aria-hidden="true">
+  <div class="marquee-inner" id="marquee-2">
+    <span class="marquee-item">POSTE COM</span>
+    <span class="marquee-item marquee-item--gold">ORGULHO</span>
+    <span class="marquee-item marquee-item--sep">∞</span>
+    <span class="marquee-item marquee-item--ghost">POSTE COM ORGULHO</span>
+    <span class="marquee-item marquee-item--sep">∞</span>
+    <span class="marquee-item">POSTE COM</span>
+    <span class="marquee-item marquee-item--gold">ORGULHO</span>
+    <span class="marquee-item marquee-item--sep">∞</span>
+    <span class="marquee-item marquee-item--ghost">POSTE COM</span>
+    <span class="marquee-item marquee-item--sep">∞</span>
+  </div>
+</div>
+
+<!-- ═══ STATS ═════════════════════════════════════════════════════════════════ -->
+<section class="section stats" id="stats" data-screen-label="Estatísticas">
+  <div class="stats__grid">
+    <div class="stat-item">
+      <span class="stat-num" data-count="10" data-suffix="min">0min</span>
+      <p class="stat-desc">pro seu primeiro post pronto</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-count="17">0</span>
+      <p class="stat-desc">nichos prontos (e crescendo)</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-count="0" data-prefix="R$">R$0</span>
+      <p class="stat-desc">de mensalidade — pagou uma vez, é seu</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROVA SOCIAL ══════════════════════════════════════════════════════════ -->
+<section class="section prova" id="prova" data-screen-label="Depoimentos">
+  <p class="kicker" data-reveal>— QUEM JÁ TRANSFORMOU O PERFIL</p>
+  <h2 class="prova__h2" data-reveal>Quem já parou de<br><span class="cyan">ter vergonha:</span></h2>
+  <div class="prova__grid">
+    <div class="dep-card" data-reveal>
+      <div class="dep-card__quote">"</div>
+      <p class="dep-card__text">Eu tinha vergonha de postar, achava tudo amador. Hoje meu Instagram tá com a cara do meu restaurante — e os clientes elogiam. Nunca mais paguei ninguém pra fazer.</p>
+      <div class="dep-card__author">
+        <div class="dep-card__photo" aria-hidden="true">
+          <img src="assets/dep-1.jpg" alt="Ademar Souza" width="64" height="64"
+               loading="lazy" decoding="async"
+               onerror="this.style.display='none';this.parentNode.textContent='AS'">
+        </div>
+        <div>
+          <div class="dep-card__name">Ademar Souza</div>
+          <div class="dep-card__biz">Restaurante Cantinho do Sabor</div>
+        </div>
+      </div>
+    </div>
+    <div class="dep-card" data-reveal data-delay="0.1">
+      <div class="dep-card__quote">"</div>
+      <p class="dep-card__text">Achei que era velho demais pra isso. Em uma tarde eu já tava criando meus posts sozinho. Ridículo de fácil.</p>
+      <div class="dep-card__author">
+        <div class="dep-card__photo" aria-hidden="true">
+          <img src="assets/dep-2.jpg" alt="Reginaldo Alcântara" width="64" height="64"
+               loading="lazy" decoding="async"
+               onerror="this.style.display='none';this.parentNode.textContent='RA'">
+        </div>
+        <div>
+          <div class="dep-card__name">Reginaldo Alcântara</div>
+          <div class="dep-card__biz">Assessor de Imprensa</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BÔNUS ══════════════════════════════════════════════════════════════════ -->
+<section class="section bonus" id="bonus" data-screen-label="Bônus">
+  <p class="kicker" data-reveal>— INCLUÍDO NO CURSO</p>
+  <h2 class="bonus__h2" data-reveal>E ainda vem com tudo isto,<br><span class="gold">sem pagar a mais:</span></h2>
+  <div class="bonus__list">
+    <div class="bonus-item">
+      <svg class="bonus-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <div><div class="bonus-item__title">Guia de cores e fontes por nicho</div><p class="bonus-item__desc">Identidade visual pronta pra cada tipo de negócio.</p></div>
+    </div>
+    <div class="bonus-item">
+      <svg class="bonus-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+      <div><div class="bonus-item__title">Banco de ideias de conteúdo</div><p class="bonus-item__desc">Centenas de ideias prontas pra você nunca travar.</p></div>
+    </div>
+    <div class="bonus-item">
+      <svg class="bonus-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      <div><div class="bonus-item__title">Calendário de postagem</div><p class="bonus-item__desc">Saiba exatamente o que postar em cada dia da semana.</p></div>
+    </div>
+    <div class="bonus-item">
+      <svg class="bonus-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      <div><div class="bonus-item__title">Comunidade exclusiva</div><p class="bonus-item__desc">Você não fica sozinho. Tire dúvidas e troque experiências.</p></div>
+    </div>
+    <div class="bonus-item">
+      <svg class="bonus-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      <div><div class="bonus-item__title">Agente Reels + Planejador de Instagram</div><p class="bonus-item__desc">IA especializada pra planejar seu conteúdo no piloto automático.</p></div>
+    </div>
+    <div class="bonus-item">
+      <svg class="bonus-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+      <div><div class="bonus-item__title">Atualização permanente</div><p class="bonus-item__desc">A IA evolui, o C.I.A evolui junto, e você não paga nada a mais.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MID CTA ══════════════════════════════════════════════════════════════ -->
+<section class="section mid-cta" id="mid-cta" data-screen-label="CTA Meio">
+  <div class="mid-cta__inner">
+    <p class="mid-cta__headline" data-reveal>Tudo isso por <span class="gold">R$197 uma única vez.</span></p>
+    <p class="mid-cta__sub" data-reveal>Sem mensalidade. Acesso imediato. 7 dias de garantia total.</p>
+    <div data-reveal data-delay="0.1">
+      <a href="https://pay.kiwify.com.br/lRRpH6F"
+         class="btn btn--gold btn--lg mag-btn"
+         target="_blank" rel="noopener noreferrer">QUERO COMEÇAR AGORA →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ OFERTA ════════════════════════════════════════════════════════════════ -->
+<section class="section oferta" id="oferta" data-screen-label="Oferta">
+  <p class="kicker" data-reveal>— INVESTIMENTO</p>
+  <h2 class="oferta__h2" data-reveal>Quanto vale parar de ter vergonha do seu negócio na internet?</h2>
+  <p class="oferta__text" data-reveal>Uma agência cobra de R$500 a R$2.000 por mês pra cuidar do seu Instagram — e ainda não fica do seu jeito. Com o C.I.A, você aprende a fazer sozinho, pra sempre:</p>
+  <div data-reveal>
+    <div class="price-card">
+      <div class="price-main">12x R$20,37</div>
+      <div class="price-sub">ou R$197 à vista</div>
+      <a href="https://pay.kiwify.com.br/lRRpH6F"
+         class="btn btn--gold btn--lg mag-btn"
+         target="_blank" rel="noopener noreferrer">QUERO COMEÇAR AGORA →</a>
+    </div>
+  </div>
+  <div class="guarantee" data-reveal>
+    <div class="guarantee__icon" aria-hidden="true">🛡</div>
+    <p class="guarantee__text"><strong>Garantia incondicional de 7 dias.</strong> Entra, faz a primeira aula, cria seu primeiro post. Se não for pra você, devolvemos 100% do seu dinheiro. O risco é todo nosso.</p>
+  </div>
+</section>
+
+<!-- ═══ ESCOLHAS + FAQ ════════════════════════════════════════════════════════ -->
+<section class="section escolhas" id="escolhas" data-screen-label="Escolhas e FAQ">
+  <p class="kicker" data-reveal>— A ESCOLHA É SUA</p>
+  <div class="escolhas__cols">
+    <div class="choice-col choice-col--off" data-reveal>
+      <div class="choice-col__icon" aria-hidden="true">✗</div>
+      <p class="choice-col__text">Continuar adiando — com o perfil parado e aquela vergonha toda vez que pensa em postar...</p>
+    </div>
+    <div class="choice-col choice-col--on" data-reveal data-delay="0.1">
+      <span class="choice-badge">RECOMENDADO</span>
+      <div class="choice-col__icon" aria-hidden="true">✓</div>
+      <p class="choice-col__text">Aprender hoje a criar conteúdo de dar orgulho — e nunca mais depender de ninguém pra isso.</p>
+    </div>
+  </div>
+  <div class="objection" data-reveal>
+    <p class="objection__q">"Mas eu não tenho jeito pra tecnologia."</p>
+    <p class="objection__a">Se você manda áudio no WhatsApp, você consegue. O curso foi feito pra quem não é da área. Passo a passo, sem pressa, sem termo difícil.</p>
+  </div>
+  <div class="faq">
+    <h3 class="faq__title" data-reveal>Perguntas frequentes</h3>
+    <div class="faq-item">
+      <button class="faq-btn" aria-expanded="false">
+        Preciso saber mexer em computador ou ser bom de tecnologia?
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-body" role="region">
+        <div class="faq-body-inner">Não. Se você sabe mandar um áudio no WhatsApp, você consegue usar o C.I.A. O curso é passo a passo, pensado pra quem não é da área — sem termo difícil, sem pressa. Tudo pelo celular.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn" aria-expanded="false">
+        Funciona pro MEU tipo de negócio?
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-body" role="region">
+        <div class="faq-body-inner">Funciona. São 17 nichos prontos (e vem mais por aí), mas o método serve pra qualquer negócio. Você aprende a criar conteúdo com a cara do seu negócio, não genérico.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn" aria-expanded="false">
+        A IA é grátis mesmo, ou vou ter que pagar algo depois?
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-body" role="region">
+        <div class="faq-body-inner">A IA que você vai usar é gratuita. Você paga uma vez pelo curso e pronto — sem mensalidade, sem assinatura escondida.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn" aria-expanded="false">
+        E se eu travar ou tiver dúvida?
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-body" role="region">
+        <div class="faq-body-inner">Você não fica sozinho. Tem a comunidade exclusiva, e o conteúdo fica disponível pra rever quantas vezes quiser, no seu ritmo.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn" aria-expanded="false">
+        Em quanto tempo eu vejo resultado?
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-body" role="region">
+        <div class="faq-body-inner">Na primeira aula você já cria seu primeiro post. De verdade.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn" aria-expanded="false">
+        E se não for pra mim?
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-body" role="region">
+        <div class="faq-body-inner">Você tem 7 dias de garantia incondicional. Se não for o que esperava, devolvemos 100% do seu dinheiro, sem pergunta nenhuma.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA FINAL ══════════════════════════════════════════════════════════════ -->
+<section class="cta-final" id="cta-final" data-screen-label="CTA Final">
+  <div class="rays" id="rays" aria-hidden="true"></div>
+  <div class="cta-final__content">
+    <p class="kicker" data-reveal>— CONTEÚDO INFINITO COM IA</p>
+    <h2 class="cta-final__h2" data-reveal>CHEGA DE<br><span class="gold">VERGONHA.</span></h2>
+    <p class="cta-final__sub" data-reveal>Aprenda hoje. Poste com orgulho amanhã.<br>O risco é todo nosso por 7 dias.</p>
+    <a href="https://pay.kiwify.com.br/lRRpH6F"
+       class="btn btn--gold btn--lg mag-btn"
+       target="_blank" rel="noopener noreferrer"
+       data-reveal data-delay="0.15">SIM, QUERO POSTAR COM ORGULHO — R$197 →</a>
+    <a href="https://wa.me/5511990101393?text=Oi!%20Vi%20o%20an%C3%BAncio%20e%20quero%20saber%20mais" target="_blank" rel="noopener" class="whatsapp-link" data-reveal data-delay="0.25"><img src="uploads/960px-WhatsApp.svg.webp" width="18" height="18" alt="" style="vertical-align:-3px;margin-right:5px;">Prefere tirar dúvidas? Fala no WhatsApp</a>
+  </div>
+</section>
+
+<!-- ═══ URGÊNCIA ══════════════════════════════════════════════════════════════ -->
+<div class="urgency-bar" data-reveal>
+  <p class="urgency-bar__text">⏰ Comece hoje — <strong>garantia incondicional de 7 dias</strong></p>
+  <div class="urgency-bar__btn-group">
+    <a href="https://pay.kiwify.com.br/lRRpH6F"
+       class="btn btn--gold mag-btn"
+       target="_blank" rel="noopener noreferrer">GARANTIR ACESSO →</a>
+    <a href="https://wa.me/5511990101393?text=Oi!%20Vi%20o%20an%C3%BAncio%20e%20quero%20saber%20mais" target="_blank" rel="noopener" class="whatsapp-link whatsapp-link--center"><img src="uploads/960px-WhatsApp.svg.webp" width="18" height="18" alt="" style="vertical-align:-3px;margin-right:5px;">Prefere tirar dúvidas? Fala no WhatsApp</a>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═════════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer__wordmark">C.I.A<span class="dot">.</span></div>
+  <div class="footer__seals" aria-label="Selos de confiança">
+    <span>🔒 Pagamento seguro</span>
+    <span>🛡 Garantia 7 dias</span>
+    <span>⚡ Acesso imediato</span>
+  </div>
+  <p class="footer__copy">© 2026 C.I.A — Conteúdo Infinito com IA</p>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo" title="Voltar ao topo">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<a class="sticky-cta" id="stickyCta"
+   href="https://pay.kiwify.com.br/lRRpH6F"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Quero o C.I.A — garantir acesso agora">QUERO O C.I.A →</a>
+
+<!-- ═══ WHATSAPP FLUTUANTE ══════════════════════════════════════════════════════ -->
+<a href="https://wa.me/5511990101393?text=Oi!%20Vi%20o%20an%C3%BAncio%20e%20quero%20saber%20mais"
+   target="_blank" rel="noopener"
+   class="wp-float"
+   aria-label="Prefere tirar dúvidas? Fala no WhatsApp">
+  <span class="wp-float__label">Prefere tirar dúvidas? 👉 Fala no WhatsApp</span>
+  <span class="wp-float__circle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.135 1.528 5.888L0 24l6.302-1.506A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.36-.214-3.737.892.944-3.634-.235-.374A9.818 9.818 0 1112 21.818z"/>
+    </svg>
+  </span>
+</a>
+
+<!-- ═══ SCRIPTS ════════════════════════════════════════════════════════════════ -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="main.js"></script>
+</body>
+</html>
